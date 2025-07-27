@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+.card{
+    display: flex;
+    max-width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container__image{
+    background-image: url(/images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.container__description{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    width: 100%;
+    padding-left: 2rem;
+}
+
+.image__car{
+    width: 15px;
+    height: 15px;
+}
+
+h1{
+    font-size: 2.2rem;
+    font-family: "Fraunces", sans-serif;
+    line-height: 2.3rem;
+    padding-right: 2rem;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+header{
+    padding-top: 20px;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-family: "Montserrat", sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+
+.container__text{
+    width: 100%;
+    padding-right: 2rem;
+    line-height: 1.5em;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+}
+
+.price{
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-size: 0.8rem;
+}
+
+.discount{
+    color: hsl(158, 36%, 37%);
+    font-size: 1.8rem;
+    font-family: "Fraunces";
+    font-weight: bold;
+}
+
+.text{
+    color: hsl(228, 12%, 48%);
+}
+
+.value{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.button{
+    width: 80%;
+    background-color: hsl(158, 36%, 37%);
+    height: 3rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    transition: background-color 0.4s;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button:hover{
+    background-color: hsl(158, 42%, 18%);
+}
+
+@media(max-width: 750px){
+    .card{
+        flex-direction: column;
+    }
+
+    .container__image{
+        min-height: 400px;
+        background-image: url(./images/image-product-mobile.jpg);
+    }
+}
