@@ -21,7 +21,7 @@ body{
 }
 
 .container__image{
-    background-image: url(/images/image-product-desktop.jpg);
+    background-image: url(/image-product-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
